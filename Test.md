@@ -34,12 +34,11 @@ Each test must contain some JavaScript that will run and tell Mochitest whether 
 $ vim MOZ_CEN/dom/helloTest/test/test_bug123456.html
 </pre>
 
-<pre>
+```html
 ...
 ...
   <script type="application/javascript">
 
-  /** Test for Bug 123456 **/
 
   ok(true, "test passed");
 
@@ -47,7 +46,7 @@ $ vim MOZ_CEN/dom/helloTest/test/test_bug123456.html
 
 ...
 ...
-</pre>
+```
 
 ###Create mochitest.ini
 
