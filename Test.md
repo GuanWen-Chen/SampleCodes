@@ -13,7 +13,7 @@ This is an article about how to create a test case and use mochitest. The more d
 Add your test file to the closest test folder you can find e.g, dom/alarm/test. Only create the new directory when you are creating the new feature.
 The following article demostrates crating test in new directory.
 
--Crate test template
+###Crate test template
 
 <pre>
 $ mkdir -p MOZ_CEN/dom/helloTest/test
@@ -22,7 +22,7 @@ $ perl MOZ_CEN/testing/mochitest/gen_template.pl -b=123456 -type=html > MOZ_CEN/
 
 \-b is the bug number and \-type decide the template type. The name of test file must start with "test_".
 
--Add test content
+###Add test content
 
 Each test must contain some JavaScript that will run and tell Mochitest whether the test has passed or failed. [SimpleTest.js](#SimpleTest)provides a number of functions for the test to use that communicate the pass/fail to Mochitest. These include:
 
@@ -49,7 +49,7 @@ $ vim MOZ_CEN/dom/helloTest/test/test_bug123456.html
 ...
 </pre>
 
--Create mochitest.ini
+###Create mochitest.ini
 
 <pre>
 $ cd MOZ_CEN/dom/helloTest/test
@@ -60,7 +60,7 @@ $ vim mochitest.ini
 [test_bug123456.html]
 </pre>
 
--Add to build tree
+###Add to build tree
 <pre>
 $ vim MOZ_CEN/dom/helloTest/moz.build
 </pre>
@@ -89,7 +89,7 @@ DIRS += [
 </pre>
 
 
--Running specific tests
+##Running specific tests
 
 <pre>
 $ cd MOZ_CEN
@@ -99,4 +99,5 @@ $ ./mach mochitest-plain dom/helloTest/test/test_bug123456.html
 
 ## Reference
 <a name="mochi" title="Mochitest" target="_blank" href="https://developer.mozilla.org/en-US/docs/Mochitest">[1] Mochitest</a>
+<br>
 <a name="SimpleTest" title="SimpleTest.js" target="_blank" href="http://mxr.mozilla.org/mozilla-central/source/testing/mochitest/tests/SimpleTest/SimpleTest.js">[2] SimpleTest.js</a>
