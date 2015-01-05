@@ -82,9 +82,10 @@ DIRS += [
     'apps',
 ...
 ...
-    'geolocation',
+    'manifest',
+    'vr',
     'helloTest',
-    'html',
+]
 ...
 ...
 </pre>
@@ -94,7 +95,6 @@ DIRS += [
 
 <pre>
 $ cd MOZ_CEN
-$ ./mach build MOZ_CEN/dom/helloTest
 $ ./mach mochitest-plain dom/helloTest/test/test_bug123456.html
 </pre>
 
