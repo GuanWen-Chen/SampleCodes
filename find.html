@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+</head>
+<body>
+
+
+<script>
+
+console.log("test");
+var a =1;
+function cTest(){
+   
+  var cars = ["Saab", "Volvo", "BMW"];
+  return cars;
+}
+var c = cTest();
+console.log('\n >>>>>>>>>>>> what I got from cTest array? ' + c[0] + ', ' + c[1] + ',' + c[2] + '\n');
+
+function addIframe(){
+  var iframe = document.createElement("iframe");
+  iframe.src = "www.google.tw";
+  document.body.appendChild(iframe);
+
+}
+
+</script>
+
+
+<h1>test</h1>test<b>test</b><a href="www.yahoo.com">test</a>
+<input ></input>
+<iframe src="www.google.com"></iframe>
+<iframe src="www.google.com"></iframe>
+ 
+<div style="top:500px; position:absolute">
+div1
+</div>
+<div style="top:200px; position:absolute">
+div2
+</div>
+<div style="top:250px; position:absolute">
+div3
+</div>
+<div style="top:150px; position:absolute">
+div4
+</div>
+<button onclick=addIframe()>add iframe</button>
+
+</body>
+</html>
